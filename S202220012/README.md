@@ -9,7 +9,7 @@ java -jar asciianimator.jar -f result.txt -l false -c true -fps 3
 ## 任务一
 1. 用plantuml画出example的类图与Scene中main方法执行过程中的对象时序图；
 
-![]()
+![image](https://github.com/jwork-2021/jw02-hogwartsfailure66/blob/master/uml/1.png)
 
 2. 尝试从面向对象编程角度理解`example`的设计理念，具体阐述这样写的好处与可改进之处（越详细越好）；
 
@@ -27,7 +27,9 @@ java -jar asciianimator.jar -f result.txt -l false -c true -fps 3
 
 5. 在自己的`Readme.md`中画出相应类图，并添加可视化结果展示链接。
 
-   还没画
+   图还没画
+   bubble sort:![bilibili](https://www.bilibili.com/video/BV1au411f7xe)
+   quick sort:![bilibili](https://www.bilibili.com/video/BV1hL4y187uo)
 
 
 ## 任务三
@@ -43,4 +45,3 @@ java -jar asciianimator.jar -f result.txt -l false -c true -fps 3
 
 还没做
 
-请在 https://asciinema.org 上注册账户并上传上述执行结果录屏。
