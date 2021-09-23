@@ -28,8 +28,8 @@ java -jar asciianimator.jar -f result.txt -l false -c true -fps 3
 5. 在自己的`Readme.md`中画出相应类图，并添加可视化结果展示链接。
 
    图还没画
-   bubble sort:![bilibili](https://www.bilibili.com/video/BV1au411f7xe)
-   quick sort:![bilibili](https://www.bilibili.com/video/BV1hL4y187uo)
+   bubble sort: https://www.bilibili.com/video/BV1au411f7xe
+   quick sort: https://www.bilibili.com/video/BV1hL4y187uo
 
 
 ## 任务三
