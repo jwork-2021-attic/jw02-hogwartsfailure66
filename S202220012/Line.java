@@ -1,6 +1,8 @@
 package S202220012;
 
 public class Line {
+    public Line() {
+    }
 
     public Line(int length) {
         this.positions = new Position[length];
@@ -41,7 +43,13 @@ public class Line {
     @Override
     public String toString() {
         String lineString = "\t";
+        int cnt = 0;
         for (Position p : positions) {
+            cnt++;
+            if (cnt > 16) {
+                cnt = 1;
+                lineString += "\n\t";
+            }
             lineString += p.linable.toString();
         }
         return lineString;

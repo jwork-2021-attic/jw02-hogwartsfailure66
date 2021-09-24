@@ -15,6 +15,7 @@ public class RandomSort {
             int k = random.nextInt(1000) % size;
             int j = random.nextInt(1000) % size;
             swap(nums, k, j);
+//            swap(nums, 0, size - 1);
         }
     }
 }
