@@ -13,7 +13,8 @@ public class Scene {
     public static void main(String[] args) throws IOException {
 
         int size = 256;
-        Line line = new Line(size);
+//        Line line = new Line(size);
+        Matrix line = new Matrix(size);
         int nums[] = new int[size];
         for (int i = 0; i < size; i++) {
             nums[i] = i;

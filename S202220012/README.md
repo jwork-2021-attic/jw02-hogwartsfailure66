@@ -14,12 +14,20 @@ java -jar asciianimator.jar -f result.txt -l false -c true -fps 3
    ![image](https://github.com/jwork-2021/jw02-hogwartsfailure66/blob/master/uml/0.png)
 
    时序图：  
-
-![image](https://github.com/jwork-2021/jw02-hogwartsfailure66/blob/master/uml/1.png)
-
+   
+   ![image](https://github.com/jwork-2021/jw02-hogwartsfailure66/blob/master/uml/1.png)
+   
 2. 尝试从面向对象编程角度理解`example`的设计理念，具体阐述这样写的好处与可改进之处（越详细越好）；
 
-   还没写
+   好处：
+
+   Linable和Sorter作为接口类，Gourd和BubbleSorter分别为两个接口类的实现类，表示葫芦娃的位置和具体的排序方法。使用接口方便对后续的实现类进行规范，比如任务二中增加QuickSorter进行排序，不管怎么实现，都可以通过调用sort()进行排序
+
+   Geezer类中有静态对象theGeezer，保证只有唯一的一个爷爷，以及排序这个动作由爷爷调用方法对葫芦娃进行排序，符合现实
+
+   可改进：
+
+   Gourd可以写成普通的类，用枚举类的话，不方便实现后续数据量更大的场景，如任务2要求的256个
 
 ## 任务二
 
@@ -35,9 +43,10 @@ java -jar asciianimator.jar -f result.txt -l false -c true -fps 3
 
 5. 在自己的`Readme.md`中画出相应类图，并添加可视化结果展示链接。
 
-   类图：
-   
    ![image](https://github.com/jwork-2021/jw02-hogwartsfailure66/blob/master/uml/2.png)
+   
+   眼瞎没看到是要蛇精指挥妖怪...做的是爷爷指挥256个葫芦娃站成一队，不过都差不多...
+   
    bubble sort: https://www.bilibili.com/video/BV1au411f7xe  
    quick sort: https://www.bilibili.com/video/BV1hL4y187uo  
 
@@ -58,9 +67,9 @@ java -jar asciianimator.jar -f result.txt -l false -c true -fps 3
 
 6. 在自己的`Readme.md`中画出相应类图，并添加可视化结果展示链接。
 
-   类图同任务二：
+   ![image](https://github.com/jwork-2021/jw02-hogwartsfailure66/blob/master/uml/3.png)
 
-   ![image](https://github.com/jwork-2021/jw02-hogwartsfailure66/blob/master/uml/2.png)
+   添加一个Matrix类继承Line，修改toString方法，每16个换行即可
 
    bubble sort: https://www.bilibili.com/video/BV1cP4y1a788/  
 

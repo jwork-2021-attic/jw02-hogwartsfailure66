@@ -1,14 +1,15 @@
 package S202220012;
 
 public class Line {
+
+    private Position[] positions;
+
     public Line() {
     }
 
     public Line(int length) {
         this.positions = new Position[length];
     }
-
-    private Position[] positions;
 
     public void put(Linable linable, int i) {
         if (this.positions[i] == null) {
@@ -38,21 +39,30 @@ public class Line {
             linable.setPosition(this);
         }
 
+        public Linable getLinable() {
+            return linable;
+        }
     }
 
     @Override
     public String toString() {
+//        String lineString = "\t";
+//        int cnt = 0;
+//        for (Position p : positions) {
+//            cnt++;
+//            if (cnt > 16) {
+//                cnt = 1;
+//                lineString += "\n\t";
+//            }
+//            lineString += p.linable.toString();
+//        }
+//        return lineString;
         String lineString = "\t";
-        int cnt = 0;
         for (Position p : positions) {
-            cnt++;
-            if (cnt > 16) {
-                cnt = 1;
-                lineString += "\n\t";
-            }
             lineString += p.linable.toString();
         }
         return lineString;
+
     }
 
     public Linable[] toArray() {
@@ -66,4 +76,7 @@ public class Line {
 
     }
 
+    public Position[] getPositions() {
+        return positions;
+    }
 }
